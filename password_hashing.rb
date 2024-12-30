@@ -2,7 +2,6 @@ require 'bcrypt'
 include BCrypt
 
 #List of user's usernames and passwords
-
 users = [
   {username: "bob", password: "bobpassword"},
   {username: "john", password: "johnpassword"},
@@ -10,6 +9,10 @@ users = [
   {username: "peter", password: "peterpassword"},
 ]
 
+#Method to create new hashed and salted password
+def hash_password(password)
+  BCrypy::Password.create(password)
+end
 
-my_password = BCrypt::Password.create("my password")
-puts my_password == "my_password"
+
+
