@@ -29,7 +29,7 @@ end
 #Method to verify entered username and password
 def authenticate_user(username, password, list_of_secure_users)
   list_of_secure_users.each do |user_record|
-    if username == user_record[:username] && password == verify_password(user_record[:password])
+    if user_record[:username] == username && verify_password(user_record[:password]) == password
       return user_record
     end
   end
@@ -39,3 +39,10 @@ end
 #New user list with secure password
 secure_user_list = create_secure_user(users)
 
+#Terminal prompt to ask for user username and password
+puts "Username: "
+username = gets.chomp.downcase
+puts "Password: "
+password = gets.chomp.downcase
+
+puts authenticate_user(username, password, secure_user_list)
