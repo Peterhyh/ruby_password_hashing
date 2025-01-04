@@ -39,7 +39,7 @@ end
 #New user list with secure password
 secure_user_list = create_secure_user(users)
 
-#Terminal prompt to ask for user's username and password
+#Terminal prompt to ask for user username and password
 puts "Username: "
 username = gets.chomp.downcase
 puts "Password: "
