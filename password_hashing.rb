@@ -12,7 +12,7 @@ users = [
 #New user list with secure password
 secure_user_list = Authentication.create_secure_user(users)
 
-#Terminal prompt to ask for user's username and password
+#Terminal prompt to ask for user's username and passwor
 puts "Username: "
 username = gets.chomp.downcase
 puts "Password: "
