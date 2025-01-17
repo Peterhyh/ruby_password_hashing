@@ -1,4 +1,7 @@
+require_relative 'authentication'
+
 class Student
+  include Authentication
   attr_accessor  :first_name, :last_name, :email, :username, :password
 
   def initialize(first_name, last_name, email, username, password)
@@ -10,3 +13,4 @@ class Student
   end
 
 end
+
