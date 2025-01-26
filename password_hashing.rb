@@ -22,7 +22,7 @@ my_hashed_password = me.hash_password(me.password)
 puts my_hashed_password
 
 
-#Terminal prompt to ask for user's username and passwor
+#Terminal prompt to ask for user's username and password
 # puts "Username: "
 # username = gets.chomp.downcase
 # puts "Password: "
